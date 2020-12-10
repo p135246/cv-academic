@@ -1,0 +1,330 @@
+\documentclass[a4paper,12pt]{article} 
+
+\usepackage{hyperref} 
+
+\usepackage[inline]{enumitem}
+
+
+% ******
+% Layout
+% ******
+
+\usepackage[left=3cm, right=3cm, top=2.5cm, bottom=2.5cm]{geometry}
+\setlength\parindent{0in}
+\setlength{\headheight}{14.5pt}
+%	Enlarged headheightbecause of a fancyhdr warning
+
+
+% ******
+% Tables
+% ******
+
+\usepackage{ltablex}
+%	Defines tabularx environment which allows for a display break (in contrast to \usepackage{tabularx})
+\keepXColumns
+%	Necessary to keep the tables aligned to the left.
+\setlength\LTpre{0in}
+%\setlength\LTpost{0in}
+%	Vertical space before and after tabularx
+
+% ************
+% Publications
+% ************
+
+\usepackage{biblatex}[bibstyle=authortitle]
+\addbibresource{./bibliography/bibliography.bib}
+\nocite{Hajek2018}
+\defbibenvironment{midbib} % Suppress the numbering in bibliography
+  {\list
+     {}
+     {\setlength{\leftmargin}{\bibhang}%
+      \setlength{\itemindent}{-\leftmargin}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}}
+  {\endlist}
+  {\item}
+
+
+% *******************
+% Headers and footers
+% *******************
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{P. H\'ajek, Academic CV}
+\rhead{\today}
+\cfoot{\thepage}
+
+
+
+
+
+
+% *********
+% Formating
+% *********
+
+\usepackage{libertine}
+
+\usepackage{titlesec,xcolor}
+\titleformat{\section}{\color{olive}\normalfont\scshape}{}{}{} 
+%	Customization of sections headings.
+
+
+
+\begin{document}
+
+
+{\Large Pavel H\'ajek}\\[.2cm]
+University of Augsburg\\
+Universitätsstraße 14 \\
+86 159 Augsburg, Germany \\[.2cm]
+Phone: +49 176 995 71920\\
+Email: \href{mailto:hajek_pavel@yahoo.de}{hajek\_pavel@yahoo.de}\\[.5cm]
+Born on September 29, 1987 in Prague, Czech Republic\\
+Nationality:  Czech
+
+\section*{Current position}
+
+\emph{PhD student} supervised by Prof. Dr. Kai Cieliebak at the Department for Analysis and Geometry, Faculty of Mathematics at the University of Augsburg.
+
+\section*{Research interests}
+
+\begin{description}[font=\normalfont]
+\item[Actively:] \emph{$\mathrm{IBL}_\infty$-algebras, string topology, perturbative Chern-Simons theory.}
+\item[Generally:] symplectic geometry, mathematical physics, dynamical systems.%(e.g., work of E. Witten and P. Mnev). 
+\end{description}
+
+\section*{Education}
+
+\begingroup
+\def\arraystretch{1.5}
+\def\minipagewidthE{.846\textwidth}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+2014--now: & \begin{minipage}[t]{\minipagewidthE}
+\emph{PhD in Mathematics, University of Augsburg} \\
+Expected to finish in summer 2019. Thesis on $\mathrm{IBL}_\infty$-algebras, string topology and perturbative Chern-Simons theory. \end{minipage} \\
+2011--2014: & \begin{minipage}[t]{\minipagewidthE}
+\emph{MSc in Theoretical and Mathematical Physics, LMU Munich} \\ 
+High distinction. Thesis on Eilenberg-Steenrod axioms for a homology theory based on manifolds with corners. 
+\end{minipage}\\
+2007--2011: & \begin{minipage}[t]{\minipagewidthE}
+\emph{BSc in Physics, Charles University in Prag} \\ 
+Distinction. Thesis on dynamical symmetries in classical and quantum mechanics.
+\end{minipage} \\
+2007--2010: &  \begin{minipage}[t]{\minipagewidthE} 
+\emph{BSc in Mathematics, Charles University in Prag} \\ 
+High distinction. Thesis on integrability of a generalization of the Lagrange top to higher dimensions.
+\end{minipage}
+\end{tabularx}
+\endgroup
+
+\section*{Scholarships}
+
+\begingroup
+\def\arraystretch{1.5}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+2012--2013: & Full scholarship for studying in Germany from the DAAD. \\
+2007--2011: & Merit scholarship from the Charles University.
+\end{tabularx}
+\endgroup
+
+\section*{Preprints}
+
+\printbibliography[heading=none,env=midbib] 
+
+\section*{Teaching}
+
+\begingroup
+\def\arraystretch{1.5}
+\def\minipagewidthT{.837\textwidth}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+SS20 & Exercise class in Floer Theory.\\
+WS19 & \begin{minipage}[t]{\minipagewidthT} 
+\begin{itemize}[leftmargin=*,itemsep=-1ex]
+\item 4 $\times$ exercise class in Mathematics for physicists I.
+\item Exercise class in Symplectic Geometry.
+\end{itemize}
+\end{minipage} \\
+WS16--SS17 & Teaching assistant in  Analysis I \& II. \\
+SS16 & Coorganizer of a seminar on Floer homology. \\
+WS14--SS15 & \begin{minipage}[t]{\minipagewidthT} 
+\begin{itemize}[leftmargin=*,itemsep=-1ex]
+\item Teaching assistant in Linear Algebra~I \& II.
+\item Tutor in state exam preparatory courses for mathematics teachers.
+\end{itemize}
+\end{minipage}\\
+SS12--WS13 & Tutor in Algebraic Topology~I~\&~II.	   		   
+\end{tabularx}
+\endgroup
+
+\section*{Administrative experience}
+
+\begingroup
+\def\arraystretch{1.5}
+\def\minpagewidthAE{.92\textwidth}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+2018 & \begin{minipage}[t]{\minpagewidthAE}
+Workshop on Symplectic Field Theory IX, University of Augsburg, August 25--31 --- responsible for the \href{https://www.math.uni-augsburg.de/prof/geo/SFTIX/}{webpage}, registration, videos.
+\end{minipage}
+\end{tabularx}
+\endgroup
+
+\section*{Talks given}
+\def\clap#1{\hbox to 0pt{\hss#1\hss}}
+\begingroup
+\def\arraystretch{1.5}
+\setlength\LTpost{1ex}
+\def\minpagewidthTG{.9207\textwidth}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+2019 & \begin{minipage}[t]{\minpagewidthTG}
+\begin{itemize}[leftmargin=*,itemsep=-1ex]
+\item Computations of the $\mathrm{IBL}_\infty$-structure, Workshop on String field theory, BV quantization, and moduli spaces, Simons Center for Geometry and Physics, Stony Brook, U.S.A., May 20--24.
+\item  Explicit computation of Feynman integrals, Seminar for symplectic geometry, University of Augsburg, Augsburg, Germany, May 13, 2019.
+\item $\mathrm{IBL}_\infty$-formality and Poincar\'e duality models, Seminar for symplectic and contact geometry at the University of Hamburg, Hamburg, Germany, April 25.
+\item Chern-Simons theory and string topology, Seminar of the Research Institute for Mathematical Science, Kyoto, Japan, March 14.
+\item Feynman integrals with the Green kernel, Seminar of the Mathematical Institute at the University of Potsdam, Potsdam, Germany, February 28.
+\item $\mathrm{IBL}_\infty$-structure and string topology conjecture, 39th Winter School Geometry and Physics, Srn\'i, Czech Republic, January 12--19.
+\end{itemize}
+\end{minipage}\\
+2016 & \begin{minipage}[t]{\minpagewidthTG}
+Presentation of a part of the proof of the Cheeger-M\"uller theorem, Block seminar on Torsion in Geometry and Topology, Schloss Gollwitz, Brandenburg, Germany, July 3--8.
+\end{minipage}\\
+2015 & \begin{minipage}[t]{\minpagewidthTG}
+Homology theory based on manifolds with corners,  Meeting of symplectic geometers, Weimar, Germany, 16--18 January. 
+\end{minipage} \\
+\end{tabularx}
+\begin{description}[font=\normalfont,leftmargin=2.84em,rightmargin=0em]
+\item[Local seminars at the University of Augsburg:]\strut\\
+Chas-Sullivan string topology, Cyclic homology, Seiberg-Witten theory, symplectic capacities and ball packing problem, Witten's non-perturbative treatment of Chern-Simons theory, linking numbers and Green kernels, dynamics near the Lagrange points in the restricted three body problem, molecules of the Euler top and other topics.
+\end{description}
+\endgroup
+\clearpage
+%******************************
+\section*{Conferences attended}
+%******************************
+
+\begingroup
+\def\arraystretch{2}
+%\hypersetup{hidelinks}
+\def\minpagewidthCA{.92\textwidth}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+
+2019 & \begin{minipage}[t]{\minpagewidthCA}
+\begin{itemize}[leftmargin=*,itemsep=-1ex]
+\item \href{http://scgp.stonybrook.edu/archives/25214}{Workshop} on String field theory, BV quantization, and moduli spaces, Simons Center for Geometry and Physics, Stony Brook, U.S.A., May 20--24.
+\item \href{http://conference.math.muni.cz/srni/}{39th} Winter School Geometry and Physics, Srn\'i, Czech Republic, January 12--19.
+\end{itemize}
+\end{minipage}\\
+
+2018 & \begin{minipage}[t]{\minpagewidthCA} 
+%\begin{itemize}[leftmargin=*]
+%\item
+\href{https://www.math.uni-augsburg.de/prof/geo/SFTIX/}{Workshop} on Symplectic Field Theory IX, University of Augsburg, Germany, August 25--31.
+%\end{itemize}
+\end{minipage}\\
+
+2017 & \begin{minipage}[t]{\minpagewidthCA} 
+%\begin{itemize}[leftmargin=*]
+%\item
+Meeting of symplectic geometers, Free University of Berlin, Germany, February 17--19.
+%\end{itemize}
+\end{minipage}  \\
+
+2016 & \begin{minipage}[t]{\minpagewidthCA}
+\begin{itemize}[leftmargin=*,itemsep=-1ex]
+\item \href{https://www.math.uni-potsdam.de/professuren/geometrie/lehre/blockseminare/2016-brandenburg/}{Block} seminar on  Torsion in Geometry and Topology, Schloss Gollwitz, Brandenburg, Germany, July 3--8.
+\item \href{https://www.math.uni-augsburg.de/prof/geo/Cast2016/}{X Workshop} on Symplectic Geometry, Contact Geometry, and Interactions, University of Augsburg, Germany, February 25--27. 
+\end{itemize}\end{minipage}\\
+
+2015 & \begin{minipage}[t]{\minpagewidthCA} 
+\begin{itemize}[leftmargin=*,itemsep=-1ex]
+\item \href{http://grk1670.math.uni-hamburg.de/ratstr2015/}{Summer} School on String Topology and Rational Homotopy Theory, University of Hamburg, Germany, September 2--4.
+
+\item \href{https://lalondeteleman.weebly.com/main-conference.html}{Moduli} Spaces in Symplectic Topology and in Gauge Theory, CIRM, Marseille, France, June 1--5.
+
+\item \href{http://conference.math.muni.cz/srni/}{35th} Winter School Geometry and Physics, Srn\'i, Czech Republic, 17--24 January.
+
+\item  Meeting of symplectic geometers, Weimar, Germany, 16--18 January.
+\end{itemize}
+\end{minipage}\\
+ 
+2014 & \begin{minipage}[t]{\minpagewidthCA} 
+%\begin{itemize}[leftmargin=*]
+%\item
+\href{https://www.lebesgue.fr/content/sem2014-loops}{Loop} spaces in geometry and topology, University of Nantes, France,  1--5 September.
+%\end{itemize}
+\end{minipage}\\
+
+2013 & \begin{minipage}[t]{\minpagewidthCA} 
+%\begin{itemize}[leftmargin=*]
+%\item
+\href{https://www.uni-muenster.de/FB10/Service/show_article.shtml?id=4161\&brettid=8}{Minicourse} on free loop spaces in topology and physics, University of M\"unster, Germany, 24 April.
+%\end{itemize}
+\end{minipage}\\
+
+2012 & \begin{minipage}[t]{\minpagewidthCA}
+%\begin{itemize}[leftmargin=*]
+%\item
+\href{http://www.projects.science.uu.nl/poisson2012/Home.php}{Poisson} Geometry in Mathematics and Physics, University of Utrecht, Netherlands, 23 July--3 August.
+%\end{itemize}
+\end{minipage}
+\end{tabularx}
+\endgroup
+
+%*******************
+\section*{Languages}
+%*******************
+
+\begingroup
+\def\arraystretch{1}
+\setlength\LTpost{1ex}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\emph{Czech}& mother tongue,\\
+\emph{English} & fluent, \\
+\emph{German} & fluent.
+\end{tabularx}
+Vocabulary to teach and discuss mathematics in all three languages.
+\endgroup
+
+\section*{Technical skills}
+
+\begin{itemize}[leftmargin=*]
+\item Programming in Wolfram~\textit{Mathematica}\textsuperscript{\textregistered} (computing Feynman integrals for spheres, searching for trajectories with prescribed itineraries in the three body problem) and Object Pascal.
+\item Linux administrator skills.
+% microchip, triangulation, minimization of logical function
+\end{itemize}
+
+%\section*{Webpages}
+%
+%https://github.com/p135246/
+
+\section*{Referees}
+
+\begin{description}[font=\normalfont]
+\item[Prof.~Dr.~Kai Cieliebak] --- University of Augsburg, Universitätsstr.~14, 86159, Augsburg, Germany. Phone: 	+49 821 598 - 2138. Email: \href{mailto:Kai.Cieliebak@math.uni-augsburg.de}{Kai.Cieliebak@math.uni-augsburg.de}
+\item[Prof.~Dr.~Urs Frauenfelder] --- University of Augsburg, Universitätsstr.~14, 86159, Augsburg, Germany. Phone: +49 821 598 - 2158.  Email: \href{mailto:Urs.Frauenfelder@math.uni-augsburg.de}{Urs.Frauenfelder@math.uni-augsburg.de}
+\end{description}
+
+%\section*{Technical skills}
+%
+%Operating systems: Linux -- administrator skills, Windows -- basic user
+%
+%advanced LaTeX user
+%
+%Programming: Projects in Object Pascal, Wolfram Mathematica, C and Assembler
+%
+%Basic understanding of PHP, Haskel, Prolog,
+%
+
+
+%
+%\section*{Hobbies}
+%
+%Tennis, windsurfing and dancing.
+
+%\section*{Hobbies}
+%
+%Windsurfing, tennis, dancing.
+
+\end{document}
